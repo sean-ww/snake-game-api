@@ -1,0 +1,38 @@
+{
+  "name": "snake-game-api",
+  "version": "1.0.0",
+  "description": "A snake game api.",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./bootstrap/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-ww/snake-game-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sean-ww/snake-game-api/issues"
+  },
+  "homepage": "https://github.com/sean-ww/snake-game-api#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.5",
+    "restify": "^8.3.3",
+    "restify-cors-middleware": "^1.1.1",
+    "restify-errors": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "prettier-eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=10.16.0"
+  }
+}

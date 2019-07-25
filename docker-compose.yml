@@ -1,0 +1,28 @@
+version: "3.3"
+
+services:
+  app:
+    build: .
+    ports:
+      - 4040:4040
+    volumes:
+      - .:/var/www
+    networks:
+      - snake
+  mongodb:
+    image: mongo:4.0
+    volumes:
+      - "mongodb-data:/data/db"
+    networks:
+      - snake
+
+volumes:
+  mongodb-data:
+
+networks:
+  snake:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 192.168.64.0/24
