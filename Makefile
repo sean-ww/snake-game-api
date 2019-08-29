@@ -12,7 +12,8 @@ commands:
 	@echo "  make stop          Stop the project for development."
 	@echo "  make restart       Restart the project for development."
 	@echo "  make update        Update the project."
-	@echo "  make shell         Open shell in the app container."
+	@echo "  make app-shell     Open shell in the app container."
+	@echo "  make db-shell      Open shell in the db container."
 	@echo "  make lint          Run eslint."
 
 
